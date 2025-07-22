@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CategorySection from "./components/CategorySection";
+import ModalPlayer from "./components/ModalPlayer";
+import videoData from "./data/videos";
+import "./App.css";
 
 function App() {
+  const [selectedVideo, setSelectedVideo] = React.useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {videoData.map((cat, i) => (
+        <CategorySection
+          key={i}
+          category={cat.category}
+          videos={cat.videos}
+          onVideoClick={setSelectedVideo}
+        />
+      ))}
+
+      {selectedVideo && (
+        <ModalPlayer
+          src={selectedVideo.src}
+          onClose={() => setSelectedVideo(null)}
+        />
+      )}
     </div>
   );
 }
