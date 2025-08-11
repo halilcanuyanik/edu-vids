@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# 🎥 Educational Video Sharing Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A lightweight web-based application designed to provide a **centralized, user-friendly interface** for accessing internal educational videos within an organization.  
+This project was developed during my internship in response to a request from the host institution to create a **more organized and accessible video library** for employees.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Project Purpose & Motivation
 
-### `npm start`
+During my internship, the organization I worked with needed a simple yet effective solution to present educational videos in a **more structured and visually appealing way**.  
+Previously, video access relied on **manual folder navigation** or **outdated interfaces**, which often slowed down the learning process.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To address this, I developed a **locally hosted platform** that:
+- Categorizes videos for easier navigation.
+- Displays them with **thumbnails** and **titles** for better recognition.
+- Allows **smooth horizontal scrolling** through video lists.
+- Supports **one-click playback** in an embedded player.
+- Runs entirely **offline** on the organization's local network.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ⚙️ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Organized Categories** – Videos grouped under relevant sections.
+- **Thumbnail Previews** – Visual cues for quicker content selection.
+- **Horizontal Scrolling** – Smooth navigation through video lists.
+- **Embedded Video Player** – No external apps required.
+- **Local Network Sharing** – Accessible from multiple devices on the same LAN.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Technology Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Node.js with Express
+- **Hosting:** Local machine (accessible over LAN)
+- **Media Handling:** HTML5 `<video>` element
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 Installation & Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the Repository**
+```bash
+git clone https://github.com/halilcanuyanik/edu-vids.git
+cd local-training-video-platform
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Install Dependencies**
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Place Videos**
+Store your video files in the /videos folder.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- 4. **Run the Application**
+```bash
+npm start
+```
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📜 License
+This project was developed as part of an internship project for a Provincial Directorate of Ministry of Environment, Urbanization and Climate Change.
+It is intended for internal use only and is not licensed for public distribution.
