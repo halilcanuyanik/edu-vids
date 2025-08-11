@@ -54,7 +54,7 @@ npm install
 3. **Place Videos**
 Store your video files in the /videos folder.
 
-- 4. **Run the Application**
+4. **Run the Application**
 ```bash
 npm start
 ```
